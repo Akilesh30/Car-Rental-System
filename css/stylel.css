@@ -1,0 +1,22 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+	background: url(cat.jpg) no-repeat;
+	background-size: cover;
+}
+.login-box{translate(-50%, -50%);
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: 
+}
+.login-box h1{
+	float: left;
+	font-size: 40px;
+	border-bottom: 6px solid
+	margin-bottom :50px
+	padding:13px;
+
+}

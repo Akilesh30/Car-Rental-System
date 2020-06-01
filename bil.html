@@ -1,0 +1,106 @@
+<html>
+<head>
+<title> car </title>
+
+<script language="javascript">
+//listbox.htm
+
+  function processit() {
+    char1=document.myform.numb1.value;
+
+    numb2=document.myform.alist.selectedIndex;
+
+    perweek=0;
+    if (char1 == 'bmw') { perweek=300; }
+    if (char1 == 'ferrari') { perweek=200; }
+    if (char1 == 'toyota') { perweek=100; }
+    if (char1 == 'mahindra') { perweek= 50; }
+    if (char1 == 'honda') { perweek= 150; } 
+    if (char1 == 'ford') { perweek= 250; } 
+    if (char1 == 'scorpio') { perweek= 400; } 
+    if (char1 == 'tata') { perweek= 350; } 
+    if (char1 == 'maruti') { perweek= 450; } 
+    if (char1 == 'jaguar') { perweek= 250; } 
+
+    cost=numb2*perweek;
+    document.myform.numb3.value=cost;
+  }
+</script>
+</head>
+
+<body>
+   <style>
+  
+body {
+  background-image: url('b.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color: white;
+}
+
+.one{
+  font-size:  20px;
+  color: white;
+  font: 30px;
+  text-align: center;
+  
+}
+</style>
+
+<form name=myform>
+  <br><br>
+  <center><h1><u>BILL GENERATION</u></h1></center>
+    <center><h1>Enter the name of the car you wish to rent using the list below: </h1></center>
+  <center><input size =15  type="text" name="numb1"></center>
+  <p>
+  <center><h1>Pick your car and type from the above field from this list</h1></center>
+  <div class="one">
+  <center>
+  <li> <mark> Car = bmw , Price = 300 per hour</mark> 
+  <li><mark> Car = ferrari , Price = 200 per hour</mark>
+  <li><mark> Car = toyota , Price = 100 per hour
+  <li><mark> Car = mahindra , Price = 50 per hour
+  <li><mark> Car = honda , price = 150 per hour
+  <li><mark> Car = ford , price = 250 per hour
+  <li><mark> Car = scorpio , price = 400 per hour
+  <li> <mark>Car = tata , price = 350 per hour
+  <li> <mark>Car = maruti , price = 450 per hour
+    <li><mark> Car = jaguar , price = 250 per hour</center>
+  </div>
+  <h2> <center><strong>Select how many weeks you wish to rent the car: </strong></center></h2>
+  <center><select name="alist" size=6 onchange="processit()">
+    <option> 0
+    <option selected> 1
+    <option> 2
+    <option > 3
+    <option> 4
+   <option> 5
+    <option> 6
+      <option> 7
+        <option> 8
+        <option> 9
+        <option> 10
+           <option> 11
+             <option> 12
+            <option> 13
+      <option> 14
+        <option> 15
+        <option> 16
+        <option> 17
+           <option> 18
+             <option> 19
+              <option> 20
+        <option> 21
+        <option> 22
+           <option> 23
+             <option> 24
+  </select></center>
+
+  <br><h3><center>Total to pay in INR </h3>
+  <center><input size =12 type="text" name="numb3"> 
+  <p>
+
+</form>
+</body>
+</html>
